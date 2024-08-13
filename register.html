@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <form action="register.php" method="post" enctype="multipart/form-data">
+        <div class="main-container-register">
+            <h1 class="register-heading">Get Started</h1>
+
+            <p class="site-description"> Welcome - Let's create your account</p>
+            <hr class="reg-hr-line">
+
+         
+            <div class="upload-img-container">
+
+                <label for="profile_img"> Upload Profile Image: </label>
+                <input class='file-upload' type="file" id="profile_img" name="profile_img"
+                    accept="image/png, image/jpeg" />
+
+            </div>
+
+            <input class="f_name_register" type="text" id="f_name" name="f_name" placeholder="First Name" required>
+            <br>
+
+            <input class="l_name_register" type="text" id="l_name" name="l_name" placeholder="Last Name" required>
+            <br>
+
+            <input class="email_register" type="email" id="email_address" name="email_address"
+                placeholder="Email Address"> <br>
+
+
+            <input class="password_register" type="password" id="psswrd" name="psswrd" placeholder="Password">
+
+            <input class='submit-registration' type="submit" name="submit" value="Submit">
+            <p class='sign-up-txt'>Already have an account? <a href="login.php">Log in </a> </p>
+        
+        </div>
+    </form>
+
+</body>
+
+</html>

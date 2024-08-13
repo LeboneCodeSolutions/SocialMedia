@@ -67,7 +67,7 @@ if ($conn->connect_error) {
             }
         } else {
             ?>
-                <p class='user-not-found-paragraph'>User Not Found!</p>
+                <p class='user-not-found-paragraph'>User Not Found</p>
             <?php
         }
     }
